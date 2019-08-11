@@ -1,0 +1,20 @@
+{
+  "name": "township-server-query",
+  "version": "1.0.0",
+  "description": "A \"A Township Tale\" server query app",
+  "main": "main.js",
+  "scripts": {
+    "run": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/underscoren/township-server-query.git"
+  },
+  "keywords": [],
+  "author": "Marius Steffens",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/underscoren/township-server-query/issues"
+  },
+  "homepage": "https://github.com/underscoren/township-server-query#readme"
+}

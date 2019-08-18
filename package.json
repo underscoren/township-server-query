@@ -4,7 +4,7 @@
   "description": "A \"A Township Tale\" server query app",
   "main": "main.js",
   "scripts": {
-    "run": "index.js"
+    "run": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/underscoren/township-server-query/issues"
   },
-  "homepage": "https://github.com/underscoren/township-server-query#readme"
+  "homepage": "https://github.com/underscoren/township-server-query#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-validator": "^6.1.1",
+    "nedb": "^1.8.0",
+    "request": "^2.88.0"
+  }
 }

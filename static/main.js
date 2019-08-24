@@ -50,8 +50,8 @@ const updateServerInfo = () => {
                             $("<tbody>").append(
                                 [
                                     $("<tr>").append([
-                                        $("<th>").append("Server version"),
-                                        $("<td>").append(server.meta_data.version)
+                                        $("<th>").append("Server region"),
+                                        $("<td>").append(server.region)
                                     ]),
                                     $("<tr>").append([
                                         $("<th>").append("Online players"),
@@ -61,7 +61,6 @@ const updateServerInfo = () => {
                                                     return $("<dd>").append(player.username);
                                                 })
                                             )
-                                            
                                         )
                                     ])
                                 ]

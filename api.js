@@ -17,7 +17,7 @@ const queryServer = () => {
                 "Authorization": "Bearer "+access_token
             },
             json: true,
-            url: "https://967phuchye.execute-api.ap-southeast-2.amazonaws.com/prod/api/Servers?status=Online"
+            url: "https://967phuchye.execute-api.ap-southeast-2.amazonaws.com/prod/api/servers/online"
         }, (err, res, data) => {
             if(err) reject(err);
 
@@ -50,7 +50,7 @@ const refreshAccess = () => {
                 "Content-Type":	"application/json; charset=utf-8",
                 "Accept": "application/json"
             },
-            url: "https://967phuchye.execute-api.ap-southeast-2.amazonaws.com/prod/api/Sessions",
+            url: "https://967phuchye.execute-api.ap-southeast-2.amazonaws.com/dev/api/sessions",
             json: true,
             body: {}
         }, (err, res, body) => {
@@ -88,7 +88,7 @@ const login = () => {
                 "Content-Type":	"application/json; charset=utf-8",
                 "Accept": "application/json"
             },
-            url: "https://967phuchye.execute-api.ap-southeast-2.amazonaws.com/prod/api/Sessions",
+            url: "https://967phuchye.execute-api.ap-southeast-2.amazonaws.com/dev/api/sessions",
             body: JSON.stringify({
                 "username": config.username,
                 "password_hash": crypto.createHash("sha512").update(config.password, "utf8").digest("hex")

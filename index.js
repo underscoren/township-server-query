@@ -1,7 +1,7 @@
 const api = require("./api");
 const express = require("express");
 const app = express();
-const PORT = process.platform == "win32" ? 8080 : 80; //development on a windows machine, deployment on a linux machine
+const PORT = process.platform == "win32" ? 8000 : 80; //development on a windows machine, deployment on a linux machine
 
 //setup express to serve files
 app.use(express.static("static"));
